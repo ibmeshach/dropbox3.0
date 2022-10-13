@@ -1,0 +1,170 @@
+.friend__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.button__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.friend__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding-bottom: 40px;
+}
+
+.friend__h1 {
+    font-size: 30px;
+}
+.friend__p {
+    font-size: 18px;
+}
+
+.friend__input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+}
+
+.enterbutton__div__friend {
+}
+
+.enter__button__friend {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+
+    border: 2px solid var(--border-color) !important;
+
+    padding: 15px 40px;
+    border-radius: 10px;
+    background: var(--border-color) !important;
+    color: var(--box-bg) !important;
+    transition: all 0.2s;
+}
+
+.text__input__friend {
+    display: inline-block;
+    color: var(--tx-color);
+    padding: 15px 10px;
+    width: 100%;
+
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.friend__service__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.friend__cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    padding: auto auto;
+    margin-top: 50px;
+    color: var(--txt-second-color);
+}
+
+.friend__card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--border-color);
+    background: var(--border-color);
+    padding: 15px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.friend__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #39f4f9;
+    background: white;
+    align-self: center;
+    margin: 10px;
+}
+
+.friend__pic {
+    align-self: center;
+    font-size: 30px;
+    color: black;
+}
+
+.friend__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.friend__address {
+    font-size: 16px;
+    text-align: left;
+}
+
+.friend__name {
+    font-size: 16px;
+    text-align: left;
+}
+
+.friend__no__files {
+    font-size: 16px;
+    text-align: left;
+}
+
+.friend__total__space {
+    font-size: 16px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .friend__cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 25px;
+        padding: auto auto;
+        margin-top: 50px;
+        color: var(--txt-second-color);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .friend__cards {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 25px;
+        padding: auto auto;
+        margin-top: 50px;
+        color: var(--txt-second-color);
+    }
+}

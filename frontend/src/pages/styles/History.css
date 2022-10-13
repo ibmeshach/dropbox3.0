@@ -1,0 +1,223 @@
+.history__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 300px;
+    margin-top: 50px;
+}
+
+.history__selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 30px;
+}
+
+.selector__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector {
+    padding: 10% 40%;
+    border-radius: 10px;
+}
+
+.button__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.closed__display {
+    display: none;
+}
+
+.history__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding-bottom: 40px;
+}
+
+.history__h1 {
+    font-size: 30px;
+}
+.history__p {
+    font-size: 18px;
+}
+
+.history__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+}
+
+.input__fields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+}
+
+.enterbutton__div__history {
+}
+
+.enter__button__history {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+
+    border: 2px solid var(--border-color) !important;
+
+    padding: 15px 40px;
+    border-radius: 10px;
+    background: var(--border-color) !important;
+    color: var(--box-bg) !important;
+    transition: all 0.2s;
+}
+
+.text__input__history {
+    display: inline-block;
+    color: var(--tx-color);
+    padding: 15px 10px;
+    width: 100%;
+
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    margin: 50px auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.history__service__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.table__container__history {
+    font-family: "Poppins", sans-serif;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.stats__history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history__cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+    padding: 10px;
+    margin-top: 50px;
+    color: var(--txt-second-color);
+}
+
+.history__card {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--border-color);
+    background: var(--border-color);
+    padding: 15px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.history__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #39f4f9;
+    background: white;
+    align-self: center;
+    margin: 10px;
+}
+
+.history__pic {
+    align-self: center;
+    font-size: 30px;
+    color: black;
+}
+
+.history__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.history__address {
+    font-size: 16px;
+    text-align: left;
+}
+
+.history__name {
+    font-size: 16px;
+    text-align: left;
+}
+
+.history__no__files {
+    font-size: 16px;
+    text-align: left;
+}
+
+.history__total__space {
+    font-size: 16px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+    .history__cards {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 25px;
+        padding: auto auto;
+        margin-top: 50px;
+        color: var(--txt-second-color);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .history__cards {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 25px;
+        padding: auto auto;
+        margin-top: 50px;
+        color: var(--txt-second-color);
+    }
+}

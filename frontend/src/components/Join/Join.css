@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.join__head {
+    color: var(--txt-color);
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 60px;
+}
+
+.join__h1 {
+    font-size: 30px;
+}
+
+.join__para {
+    font-size: 18px;
+}
+
+.join__steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.join__icons {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.icons__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon__div {
+    display: flex;
+    justify-content: center;
+    background: var(--border-color);
+    height: 150px;
+    width: 150px;
+    margin-bottom: 50px;
+    align-self: center;
+
+    border-radius: 50%;
+    align-items: center;
+    border: 2px solid #39f4f9;
+}
+
+.join__icon {
+    font-size: 50px;
+    color: white;
+}
+
+.icon__text {
+    color: var(--txt-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.icon__h1 {
+    font-size: 25px;
+}
+
+.icon__para {
+    font-size: 16px;
+}
+
+/* responsive css */
+
+@media screen and (max-width: 900px) {
+    .join__steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .join__head {
+        color: var(--txt-color);
+        padding-bottom: 70px;
+        margin-bottom: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .join__h1 {
+        font-size: 35px;
+    }
+
+    .join__para {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .join__steps {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

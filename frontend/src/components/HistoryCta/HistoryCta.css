@@ -1,0 +1,81 @@
+.HistoryCta__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.HistoryCta__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Nft__img {
+}
+
+.HistoryCta__h1 {
+    font-size: 35px;
+}
+
+.HistoryCta__p {
+    font-size: 22px;
+    color: var(--border-color);
+}
+
+.enter__button__HistoryCta {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+
+    border: 2px solid var(--border-color);
+
+    padding: 13px 45px;
+    border-radius: 10px;
+    background: var(--border-color);
+    color: var(--box-bg);
+    transition: all 0.2s;
+}
+.button__text {
+    font-size: 20px;
+}
+
+.historyImg {
+    width: 300px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 790px) {
+    .HistoryCta__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        gap: 80px;
+
+        padding-top: 200px;
+    }
+
+    .HistoryCta__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .HistoryCta__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

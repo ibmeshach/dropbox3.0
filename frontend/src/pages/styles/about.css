@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+.about {
+    width: 100%;
+    padding: 78px 0px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--txt-color);
+}
+
+.about img {
+    height: 250px;
+    width: 420px;
+    border-radius: 20px;
+}
+
+.about-text {
+    color: var(--txt-color);
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about-text h1 {
+   
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+   
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+.about-text p {
+    color: var(--txt-color);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+button {
+    background: var(--border-color);
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: .4s;
+}
+
+button:hover {
+    background: transparent;
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+    color: var(--txt-color);
+}
+
+
+/* Services */
+
+.service {
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service>h1 {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--txt-color);
+}
+
+.block {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #39F4F9;
+    background: var(--border-color);
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card>h1 {
+    padding-bottom: 10px;
+    font-size: 28px;
+}
+
+.card>p {
+    padding-bottom: 10px;
+}
+
+.icon-block {
+    padding: 5px;
+}
+
+.icon {
+    font-size: 50px;
+    color: white;
+    border-radius: 50%;
+    border: 1px solid #39F4F9;
+    padding: 5px;
+}
+
+/* Users comment */
+
+.user {
+    padding-top: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user>h1 {
+    padding-top: 80px;
+    padding-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--txt-color);
+}
+
+.user>p {
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+    justify-content: center;
+    color: var(--txt-color);
+}
+
+.p-text {
+    padding-bottom: 40px;
+    display: flex;
+    font-size: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--txt-color);
+}
+
+
+.img-block {
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.img-block>img {
+    width: 60px;
+    height: 60px;
+}
+
+.img-block>div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
+    color: lightgray;
+}
+
+.star {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+
+
+
+/* Small Devices */
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .about {
+        width: 100%;
+        padding: 78px 0px;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .about img {
+        height: 240px;
+        width: 370px;
+        border-radius: 20px;
+        margin-top: -130px;
+    }
+    
+    .about-text {
+        color: var(--txt-color);
+        width: 550px;
+    }
+    
+    .main {
+        width: 1000px;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    
+    .about-text h1 {
+        color: var(--txt-color);
+        font-size: 40px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    
+    .about-text h5 {
+        color: var(--txt-color);
+        font-size: 20px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+  
+    
+    .about-text p {
+        color: var(--txt-color);
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    
+    button {
+        background: var(--border-color);
+        color: white;
+        border: 2px solid transparent;
+        font-weight: bold;
+        font-size: 15px;
+        padding: 8px 25px;
+        border-radius: 15px;
+        transition: .4s;
+    }
+    
+    button:hover {
+        background: transparent;
+        border: 2px solid var(--border-color);
+        cursor: pointer;
+        color: var(--txt-color);
+    }
+    
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #39F4F9;
+        background: var(--border-color);
+        border-radius: 5px;
+        padding-top: 17px;
+        padding-left: 17px;
+        padding-right: 15px;
+    }
+    
+    .card>h1 {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    
+    .card>p {
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    
+    .icon-block {
+        padding: 5px;
+    }
+    
+    .icon {
+        font-size: 40px;
+        color: white;
+        border-radius: 50%;
+        border: 1px solid #39F4F9;
+        padding: 5px;
+    }
+
+    .block{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+
+
+
+    .user {
+        padding-top: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .user>h1 {
+        padding-top: 80px;
+        padding-bottom: 15px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    .user>p {
+        padding-bottom: 5px;
+        font-size: 1.4rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .p-text {
+        padding-bottom: 40px;
+        display: flex;
+        font-size: 1.3rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    
+    .img-block {
+        padding: 5px;
+        display: flex;
+        gap: 5px;
+        padding-bottom: 20px;
+        align-items: center;
+    }
+    
+    .img-block>img {
+        width: 45px;
+        height: 45px;
+        margin-top: 0px;
+        
+    }
+    
+    .img-block>div {
+        display: flex;
+        flex-direction: column;
+        
+        
+    
+    }
+    
+    .name {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    
+    .title {
+        font-size: 15px;
+        font-weight: bold;
+        color: lightgray;
+    }
+    
+    .star {
+        display: flex;
+        gap: 10px;
+        padding-bottom: 30px;
+    }
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 720px) {
+    .about {
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    .about img {
+        height: auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+ 
+
+    .about-text {
+        color: var(--txt-color);
+        width: 100%;
+        padding: 5px;
+    }
+
+    .main {
+        width: 100%;
+        max-width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .about-text h1 {
+        color: var(--txt-color);
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    .about-text h5 {
+        color: var(--txt-color);
+        font-size: 25px;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+
+
+
+    .about-text p {
+        color: var(--txt-color);
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 16px;
+        margin-bottom: 45px;
+        text-align: left;
+    }
+
+    button {
+        background: var(--border-color);
+        color: white;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 20px;
+        border-radius: 20px;
+        transition: .4s;
+    }
+
+    button:hover {
+        background: transparent;
+        border: 2px solid var(--border-color);
+        cursor: pointer;
+        color: var(--txt-color);
+    }
+
+    /* Services */
+
+    .service {
+        padding-top: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service>h1 {
+        padding-top: 80px;
+        padding-bottom: 60px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .block {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+
+    /* .card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #39F4F9;
+        background: #1F204E;
+        border-radius: 5px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card>h1 {
+        padding-bottom: 10px;
+        font-size: 28px;
+    }
+
+    .card>p {
+        padding-bottom: 10px;
+    }
+
+    .icon-block {
+        padding: 5px;
+    }
+
+    .icon {
+        font-size: 50px;
+        color: white;
+        border-radius: 50%;
+        border: 1px solid gold;
+        padding: 5px;
+    } */
+
+    /* Users comment */
+
+    .user {
+        padding-top: 20px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user>h1 {
+        padding-top: 80px;
+        padding-bottom: 15px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .user>p {
+        padding-bottom: 5px;
+        font-size: 16px;
+        justify-content: center;
+        
+    }
+
+    .p-text {
+        padding-bottom: 30px;
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-block {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding-bottom: 20px;
+    }
+
+    .img-block>img {
+        width: 20%;
+    }
+
+    .img-block>div {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .name {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: bold;
+        color: lightgray;
+    }
+
+}

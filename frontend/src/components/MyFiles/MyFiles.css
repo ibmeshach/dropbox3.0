@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.table__container {
+    font-family: "Poppins", sans-serif;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.table__h1 {
+    font-size: 30px;
+    text-align: center;
+    color: var(--txt-color);
+    margin-bottom: 40px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+}
+
+.table thead {
+    background-color: var(--border-color);
+    color: black;
+    border: 1px solid var(--border-color);
+}
+
+.table thead tr th {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: white;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+}
+
+.table tbody tr td {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: var(--txt-color);
+    background-color: white;
+    padding: 15px 10px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.component {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    color: black;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 250ms ease;
+    pointer-events: all;
+}
+
+.modal-container__target {
+    display: none;
+}
+
+.modal-title {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.modal {
+    margin: auto;
+    width: 90%;
+    max-width: 30rem;
+    background-color: var(--border-color);
+    border-radius: 1.5rem;
+    color: black;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+
+.modal-content {
+    padding: 1.2rem;
+    margin: 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content .icons {
+    color: black;
+    display: flex;
+    font-size: 5rem;
+    justify-content: center;
+    gap: 60px;
+}
+
+.modal-close {
+    color: transparent;
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem;
+    overflow: hidden;
+    background-image: linear-gradient(
+            to top right,
+            transparent 48%,
+            white 48%,
+            white 52%,
+            transparent 52%
+        ),
+        linear-gradient(to top left, transparent 48%, white 48%, white 52%, transparent 52%);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    background-image: linear-gradient(
+            to top right,
+            transparent 76%,
+            black 46%,
+            black 54%,
+            transparent 54%
+        ),
+        linear-gradient(to top left, transparent 46%, black 46%, black 54%, transparent 54%);
+}
+
+.myfiles__modal__div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.closed__button {
+    display: none;
+}
+.pinning__modal__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: white;
+    animation: an1 1s ease infinite;
+}
+.pin__button {
+    background-color: #39f4f9 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid var(--border-color);
+    padding: 10px 35px;
+    border-radius: 10px;
+
+    color: var(--box-bg) !important;
+}
+
+.button__text {
+    font-size: 17px !important;
+}
+
+.myfilesInput__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.myfilesInput__input__name {
+    color: var(--txt-color);
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.myfilesInput__input__value {
+    color: var(--txt-color);
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.myfilesInput__button {
+    background-color: #39f4f9;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 945px) {
+    .table thead {
+        display: none;
+    }
+    .component {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 690px;
+        border-radius: 2px;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+    }
+
+    .table tbody tr td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+.title__button__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+.title__button {
+    color: var(--txt-color);
+    padding: 12px 60px;
+
+    border-radius: 15px;
+    background: var(--body-bg);
+    border: 2px solid var(--border-color);
+    cursor: pointer;
+}
+
+.title__button:hover {
+    color: white;
+    padding: 10px 60px;
+    background: var(--border-color);
+
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+}
+
+@media screen and (max-width: 750px) {
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 500px;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 400px;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 355px;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 290px;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 270px;
+        border-radius: 2px;
+    }
+}

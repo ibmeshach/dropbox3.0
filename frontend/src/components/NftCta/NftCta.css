@@ -1,0 +1,119 @@
+.NftCta__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+
+    margin-top: 100px;
+}
+
+.NftCta__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Nft__img {
+}
+
+.NftCta__h1 {
+    font-size: 35px;
+}
+
+.NftCta__p {
+    font-size: 22px;
+    color: var(--border-color);
+}
+
+.enter__button__NftCta {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+
+    border: 2px solid var(--border-color);
+
+    padding: 13px 45px;
+    border-radius: 10px;
+    background: var(--border-color);
+    color: var(--box-bg);
+    transition: all 0.2s;
+}
+.button__text {
+    font-size: 20px;
+}
+
+/* Slideshow */
+
+.slideshow {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 338px;
+    border-radius: 15px;
+}
+
+.slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+}
+
+.slide {
+    display: inline-block;
+
+    border-radius: 40px;
+}
+.nft {
+    border-radius: 10px;
+}
+
+/* Buttons */
+
+.slideshowDots {
+    text-align: center;
+}
+
+.slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+    cursor: pointer;
+    margin: 15px 7px 0px;
+
+    background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+    background-color: var(--border-color);
+}
+
+@media screen and (max-width: 790px) {
+    .NftCta__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        gap: 80px;
+
+        padding-top: 200px;
+    }
+
+    .NftCta__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .NftCta__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

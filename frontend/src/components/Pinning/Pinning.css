@@ -1,0 +1,121 @@
+.pinning__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.pinned {
+    color: green;
+}
+
+.pinning__selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.selector__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector {
+    padding: 10% 40%;
+    border-radius: 10px;
+}
+
+.button__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
+.closed__display {
+    display: none;
+}
+
+.pinning__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding-bottom: 40px;
+}
+
+.pinning__h1 {
+    font-size: 30px;
+}
+.pinning__p {
+    font-size: 18px;
+}
+
+.pinning__input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+}
+
+.enterbutton__div__pinning {
+}
+
+.enter__button__pinning {
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+
+    border: 2px solid var(--border-color) !important;
+
+    padding: 15px 40px;
+    border-radius: 10px;
+    background: var(--border-color) !important;
+    color: var(--box-bg) !important;
+    transition: all 0.2s;
+}
+
+.text__input__pinning {
+    display: inline-block;
+    color: var(--tx-color);
+    padding: 15px 10px;
+    width: 100%;
+
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.pinning__service__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.table__container__pinning {
+    font-family: "Poppins", sans-serif;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
